@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run OpenGL",
+            "type": "shell",
+            "command": "g++ '${file}' -o '${fileDirname}/${fileBasenameNoExtension}' -lGL -lGLU -lglut && '${fileDirname}/${fileBasenameNoExtension}'",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
